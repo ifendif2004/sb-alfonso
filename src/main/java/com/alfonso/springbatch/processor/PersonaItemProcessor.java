@@ -1,10 +1,10 @@
-package com.alfonso.demospringbatch.processor;
+package com.alfonso.springbatch.processor;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.batch.item.ItemProcessor;
 
-import com.alfonso.demospringbatch.model.Persona;
+import com.alfonso.springbatch.model.Persona;
 
 public class PersonaItemProcessor implements ItemProcessor<Persona, Persona>{
 

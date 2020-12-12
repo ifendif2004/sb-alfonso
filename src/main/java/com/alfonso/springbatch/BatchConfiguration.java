@@ -1,4 +1,4 @@
-package com.alfonso.demospringbatch;
+package com.alfonso.springbatch;
 
 import javax.sql.DataSource;
 
@@ -19,10 +19,9 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.core.io.ClassPathResource;
 
-
-import com.alfonso.demospringbatch.listener.JobListener;
-import com.alfonso.demospringbatch.model.Persona;
-import com.alfonso.demospringbatch.processor.PersonaItemProcessor;
+import com.alfonso.springbatch.listener.JobListener;
+import com.alfonso.springbatch.model.Persona;
+import com.alfonso.springbatch.processor.PersonaItemProcessor;
 
 
 @Configuration

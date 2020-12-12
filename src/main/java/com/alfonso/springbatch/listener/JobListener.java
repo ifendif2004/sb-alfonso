@@ -1,4 +1,4 @@
-package com.alfonso.demospringbatch.listener;
+package com.alfonso.springbatch.listener;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -10,7 +10,7 @@ import org.springframework.boot.test.autoconfigure.OverrideAutoConfiguration;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Component;
 
-import com.alfonso.demospringbatch.model.Persona;
+import com.alfonso.springbatch.model.Persona;
 
 
 @Component

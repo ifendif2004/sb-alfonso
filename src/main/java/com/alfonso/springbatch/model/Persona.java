@@ -1,4 +1,4 @@
-package com.alfonso.demospringbatch.model;
+package com.alfonso.springbatch.model;
 
 public class Persona {
 	private String primerNombre;
