@@ -24,6 +24,7 @@ import com.alfonso.demospringbatch.listener.JobListener;
 import com.alfonso.demospringbatch.model.Persona;
 import com.alfonso.demospringbatch.processor.PersonaItemProcessor;
 
+
 @Configuration
 @EnableBatchProcessing
 public class BatchConfiguration {
@@ -54,7 +55,7 @@ public class BatchConfiguration {
 	@Bean
 	public JdbcBatchItemWriter<Persona> writer (DataSource dataSource){
 		return new JdbcBatchItemWriterBuilder<Persona>()
-				.itemSqlParameterSourceProvider(new BeanPropertyItemSqlParameterSourceProvider<>())
+				.itemSqlParameterSourceProvider(new BeanPropertyItemSqlParameterSourceProvider<Persona>())
 				.sql("INSERT INTO persona (primer_nombre, segundo_nombre, telefono) VALUES (:primerNombre, :segundoNombre, :telefono)")
 				.dataSource(dataSource)
 				.build();
@@ -81,5 +82,4 @@ public class BatchConfiguration {
 	}
 	
 
-	
 }

@@ -32,6 +32,7 @@ public class JobListener extends JobExecutionListenerSupport{
 		if (jobExecution.getStatus() == BatchStatus.COMPLETED) {
 			LOG.info("FINALIZÓ EL JOB");
 			String select = "SELECT primer_nombre, segundo_nombre, telefono FROM persona";
+			
 			jdbcTemplate
 			.query("SELECT primer_nombre, segundo_nombre, telefono FROM persona", 
 					(rs, row) -> new Persona(rs.getString(1), rs.getString(2), rs.getString(3)))
